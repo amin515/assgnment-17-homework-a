@@ -1,0 +1,96 @@
+* {
+  margin:0;
+  left: 0;
+ }
+ 
+.main-div{}
+.main-div ul{
+    background: #3498db;
+    text-align: center;
+}
+.main-div ul li{
+    display: inline-block;
+    
+}
+.main-div ul li a{
+    display: inline-block;
+color: #fff;
+font-size: 20px;
+text-decoration: none;
+padding: 10px 20px;
+border-right: 1px solid #ddd;
+margin-left: 1px;
+
+
+}
+
+.main-div ul li:first-child a{
+    border-left: 1px solid #ddd;
+}
+.main-div ul li a:hover{
+    background: #2980b9;
+}
+
+
+/* drop down menu */
+.main-div ul li{
+    position: relative;
+    margin-left: -4px;
+}
+.main-div ul ul li:first-child a{
+    border-left: none;
+}
+
+.main-div ul li ul{
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 200px;
+    background:#3498db;
+    padding-left: 4px;
+    border-top: 1px solid #ddd;
+    transition: .3s;
+}
+.main-div ul li ul li{
+    display: block;
+}
+.main-div ul li ul li a{
+    display: block;
+    border-bottom: 1px solid #ddd;}
+    /*hover part */
+     .main-div ul li ul{
+        opacity: 0;
+        visibility: hidden;
+        transform: scaleY(0);
+        transform-origin: top center;
+     }
+    .main-div ul li:hover ul{
+    transform: scaleY(1);
+     opacity: 1;
+     visibility: visible;
+    
+    }
+     
+.main-div ul li ul li a:hover{}
+
+
+
+.social ul{
+    text-align: center;
+}
+.social ul li{
+    display: inline-block;
+}
+.social ul li a{
+    color: rgb(194, 56, 56);
+    background: rgb(233, 195, 27);
+    padding: 4px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-top: 150px;
+    display: inline-block;
+    line-height: 50px;
+}
+.social ul li a:hover{}
